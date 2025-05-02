@@ -5,7 +5,20 @@ document.addEventListener('DOMContentLoaded', function() {
   categoryHeaders.forEach(header => {
     header.addEventListener('click', function() {
       const category = this.parentElement;
-      category.classList.toggle('active');
+      
+      // If already active, just close it
+      if (category.classList.contains('active')) {
+        category.classList.remove('active');
+        return;
+      }
+      
+      // Optional: close other open sections (accordion behavior)
+      // Uncomment the next 3 lines for true accordion behavior
+      // document.querySelectorAll('.category.active').forEach(activeCategory => {
+      //   activeCategory.classList.remove('active');
+      // });
+      
+      category.classList.add('active');
     });
   });
 
@@ -14,9 +27,23 @@ document.addEventListener('DOMContentLoaded', function() {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
       
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
+      const target = document.querySelector(this.getAttribute('href'));
+      
+      // Highlight the current nav item
+      document.querySelectorAll('.nav-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      this.classList.add('active');
+      
+      // Scroll to target section
+      target.scrollIntoView({
         behavior: 'smooth'
       });
+      
+      // Open the section if it's closed
+      if (!target.classList.contains('active')) {
+        target.classList.add('active');
+      }
     });
   });
 
@@ -26,9 +53,38 @@ document.addEventListener('DOMContentLoaded', function() {
     firstCategory.classList.add('active');
   }
 
+  // Highlight current section in navigation based on scroll position
+  window.addEventListener('scroll', highlightNavOnScroll);
+
   // Load content data
   loadSectionContent();
 });
+
+// Function to highlight navigation based on scroll position
+function highlightNavOnScroll() {
+  const scrollPosition = window.scrollY;
+  
+  // Get all sections and find which one is currently in view
+  document.querySelectorAll('.category').forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    const sectionBottom = sectionTop + section.offsetHeight;
+    
+    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      const id = section.getAttribute('id');
+      
+      // Remove active class from all nav items
+      document.querySelectorAll('.nav-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      // Add active class to corresponding nav item
+      const activeNavItem = document.querySelector(`.nav-item[href="#${id}"]`);
+      if (activeNavItem) {
+        activeNavItem.classList.add('active');
+      }
+    }
+  });
+}
 
 // Function to load content data
 function loadSectionContent() {

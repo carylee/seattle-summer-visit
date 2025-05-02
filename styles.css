@@ -16,6 +16,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px; /* Account for sticky nav */
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
@@ -59,6 +64,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 .nav-items {
@@ -66,6 +73,9 @@ body {
   overflow-x: auto;
   padding: 0.5rem;
   scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .nav-items::-webkit-scrollbar {
@@ -79,11 +89,13 @@ body {
   margin: 0 0.25rem;
   white-space: nowrap;
   border-radius: 4px;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
+  font-weight: 500;
 }
 
-.nav-item:hover {
+.nav-item:hover, .nav-item.active {
   background-color: var(--secondary);
+  transform: translateY(-2px);
 }
 
 .nav-item i {
@@ -102,6 +114,12 @@ main {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.category:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
 }
 
 .category-header {
@@ -112,6 +130,11 @@ main {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category:nth-child(odd) .category-header {
+  background-color: var(--secondary);
 }
 
 .category-header h2 {
@@ -122,6 +145,7 @@ main {
 
 .category-header h2 i {
   margin-right: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .accordion-toggle {
@@ -134,9 +158,15 @@ main {
 }
 
 .category-content {
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: white;
   display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .category.active .category-content {
@@ -147,31 +177,56 @@ main {
   transform: rotate(180deg);
 }
 
-/* Activity items styling will be added later */
+/* Activity items styling */
 .activity {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 4px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-radius: 8px;
   border: 1px solid #ddd;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.activity:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
 
 .activity-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
 }
 
 .activity-title {
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--dark);
+}
+
+.activity-description {
+  margin-bottom: 0.75rem;
+  color: var(--gray);
 }
 
 .activity-link {
   color: var(--primary);
   text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 0.5rem;
+  transition: all 0.2s;
 }
 
 .activity-link:hover {
-  text-decoration: underline;
+  color: var(--dark);
+  transform: translateX(3px);
+}
+
+.activity-link i {
+  font-size: 0.8rem;
+  margin-left: 0.25rem;
 }
 
 /* Cary's pick highlight */
@@ -191,6 +246,16 @@ main {
   font-size: 0.7rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0 0 0 4px;
+  font-weight: 700;
+}
+
+/* Sub-category styling */
+.sub-category {
+  margin: 1.5rem 0 1rem;
+  color: var(--dark);
+  border-bottom: 2px solid var(--primary-light);
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 
 /* Footer */
