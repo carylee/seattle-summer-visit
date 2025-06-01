@@ -1,4 +1,3 @@
-/* Base styles */
 :root {
   --primary: #2c7da0;
   --primary-light: #a9d6e5;
@@ -55,6 +54,62 @@ body {
 .hero-description {
   max-width: 600px;
   margin: 0 auto;
+}
+
+/* --- Featured Section styles --- */
+.featured-section {
+  background: var(--primary-light);
+  padding: 2rem 1rem 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(90,150,170,0.08);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featured-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#featured-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.featured-card {
+  background: white;
+  border: 2px solid var(--primary);
+  box-shadow: 0 2px 6px rgba(44,125,160,0.08);
+  border-radius: 8px;
+  padding: 1.25rem;
+  flex: 1 1 320px;
+  min-width: 240px;
+  max-width: 400px;
+  margin-bottom: 0.5rem;
+}
+
+.featured-card h3 {
+  margin-top: 0;
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.featured-links {
+  font-size: 0.95em;
+  color: var(--secondary);
+}
+
+@media screen and (max-width: 768px) {
+  #featured-cards { flex-direction: column; }
+  .featured-card { max-width: 100%; min-width: unset; width: 100%; }
 }
 
 /* Navigation styles */
@@ -275,6 +330,8 @@ footer {
   .hero {
     height: 30vh;
   }
+  #featured-cards { flex-direction: column; }
+  .featured-card { max-width: 100%; min-width: unset; width: 100%; }
 }
 
 @media screen and (max-width: 480px) {
