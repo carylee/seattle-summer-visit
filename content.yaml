@@ -48,7 +48,6 @@ categories:
       - title: Chihuly Garden & Glass
         description: "Stunning exhibition of colorful glass art by Dale Chihuly, next to the Space Needle."
         link: https://www.chihulygardenandglass.com/
-        pick: true
       - title: Seattle Center Monorail
         description: "Historic monorail connecting Seattle Center to downtown, perfect for kids."
         link: https://www.seattlemonorail.com/
@@ -58,8 +57,10 @@ categories:
       - title: Pike Place Market
         description: "Historic farmers market with food vendors, crafts, and the famous fish throwers."
         link: https://pikeplacemarket.org/
+        pick: true
       - title: Central Library (Downtown)
         description: "Architectural marvel with a unique glass and steel structure, featuring an excellent children's section."
+        pick: true
         link: https://www.spl.org/hours-and-locations/central-library
   water:
     label: "On-the-Water Fun"
