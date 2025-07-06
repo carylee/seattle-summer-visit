@@ -1,0 +1,313 @@
+featured:
+  - title: "Crystal Mountain + Mt. Rainier Adventure"
+    icon: "fa-mountain"
+    description: |
+      Ride the <a href="https://www.crystalmountainresort.com/" target="_blank">Crystal Mountain Gondola</a> up for epic views and lunch, then drive to <a href="https://www.nps.gov/mora/index.htm" target="_blank">Mt. Rainier National Park</a> for a scenic hike or waterfall stop.<br>
+      <span class="featured-links">See: <a href="#day-trips">Day Trips</a></span>
+  - title: "Bainbridge Ferry & Kids Museum Day"
+    icon: "fa-ship"
+    description: |
+      Take the <a href="https://www.wsdot.wa.gov/ferries/" target="_blank">ferry to Bainbridge</a>, stroll off for coffee or lunch, and visit the <a href="https://kidimu.org/" target="_blank">KiDiMu (Kids Discovery Museum)</a> just 5 minutes from the dock.
+      <br><span class="featured-links">See: <a href="#water">On-The-Water</a> & <a href="#museums">Museums</a></span>
+  - title: "Boat Day on Lake Union & Lake Washington"
+    icon: "fa-anchor"
+    description: |
+      Full day on the water with Freedom Boat Club (10am-8:30pm) cruising Lake Union to Lake Washington. Jon, Todd, Robin, and Cary will be there! Perfect for a picnic lunch on the boat.<br>
+      <span class="featured-links">See: <a href="#water">On-The-Water</a></span>
+
+nav:
+  - key: landmarks
+    label: Landmarks
+  - key: water
+    label: On-the-Water
+  - key: beaches
+    label: Beaches
+  - key: parks
+    label: Parks
+  - key: museums
+    label: Museums
+  - key: capitol-hill
+    label: Capitol Hill
+  - key: breweries
+    label: Breweries
+  - key: day-trips
+    label: Day Trips
+  - key: events
+    label: Events
+  - key: rain-days
+    label: Rain Days
+
+categories:
+  landmarks:
+    label: "Iconic Seattle Landmarks"
+    icon: "fa-landmark"
+    entries:
+      - title: Space Needle
+        description: "Seattle's iconic observation tower offering panoramic views of the city and surrounding area."
+        link: https://www.spaceneedle.com/
+      - title: Chihuly Garden & Glass
+        description: "Stunning exhibition of colorful glass art by Dale Chihuly, next to the Space Needle."
+        link: https://www.chihulygardenandglass.com/
+        pick: true
+      - title: Seattle Center Monorail
+        description: "Historic monorail connecting Seattle Center to downtown, perfect for kids."
+        link: https://www.seattlemonorail.com/
+      - title: Seattle Great Wheel
+        description: "Ferris wheel on the waterfront providing excellent views of the city and Puget Sound."
+        link: https://seattlegreatwheel.com/
+      - title: Pike Place Market
+        description: "Historic farmers market with food vendors, crafts, and the famous fish throwers."
+        link: https://pikeplacemarket.org/
+      - title: Central Library (Downtown)
+        description: "Architectural marvel with a unique glass and steel structure, featuring an excellent children's section."
+        link: https://www.spl.org/hours-and-locations/central-library
+  water:
+    label: "On-the-Water Fun"
+    icon: "fa-water"
+    entries:
+      - subcat: "Freedom Boat Club routes (member access):"
+      - title: "Lake Union → Lake Washington loop"
+        pick: true
+      - title: "Ballard Locks → Puget Sound/Shilshole"
+      - title: "Elliott Bay skyline cruise"
+      - title: "Island hop: Blake Island SP or Poulsbo"
+      - subcat: "Other options"
+      - title: Electric Boat Co.
+        description: "Rent an electric boat to cruise around Lake Union at your own pace."
+        link: https://www.theelectricboatco.com/
+      - title: Green Lake Boat House
+        description: "Rent paddle boats, canoes, kayaks, and stand-up paddleboards on Green Lake."
+        link: https://greenlakeboathouse.com/
+      - title: WA State Ferry (Seattle ↔ Bainbridge)
+        pick: true
+        description: "Scenic ferry ride across Puget Sound to Bainbridge Island with spectacular Seattle skyline views."
+        link: https://www.wsdot.wa.gov/ferries/
+      - title: Center for Wooden Boats Sunday sails
+        description: "Free public sailboat rides on Lake Union every Sunday (first-come, first-served)."
+        link: https://www.cwb.org/
+  beaches:
+    label: "Beaches & Waterfront Hang-outs"
+    icon: "fa-umbrella-beach"
+    entries:
+      - title: Madison Park Beach
+        pick: true
+        description: "Lifeguarded beach with a swimming area, playground, and picnic facilities."
+        link: https://www.seattle.gov/parks/allparks/madison-park-beach
+      - title: Alki Beach Park
+        description: "Long sandy beach with stunning views of Puget Sound and the Olympic Mountains."
+        link: https://www.seattle.gov/parks/allparks/alki-beach-park
+      - title: Golden Gardens Park
+        description: "Popular beach park with swimming, fire pits, and spectacular sunsets."
+        link: https://www.seattle.gov/parks/allparks/golden-gardens-park
+      - title: Discovery Park Beach
+        description: "Secluded beach at Seattle's largest city park with trails and a lighthouse."
+        link: https://www.seattle.gov/parks/allparks/discovery-park
+      - title: Olympic Sculpture Park pocket beach
+        description: "Small beach area at the waterfront sculpture park with art and shoreline access."
+        link: https://www.seattleartmuseum.org/visit/olympic-sculpture-park
+      - title: Gene Coulon Park
+        description: "Lake Washington beach park with swimming, playground, and restaurants."
+        link: https://rentonwa.gov/parks
+      - title: International Fountain (Seattle Center)
+        pick: true
+        description: "Interactive fountain with water shows choreographed to music, perfect for hot days."
+        link: https://www.seattlecenter.com/fountain
+  parks:
+    label: "Parks, Trails & Splash"
+    icon: "fa-tree"
+    entries:
+      - title: Volunteer Park (wading pool & Asian Art Museum)
+        pick: true
+        description: "Historic Capitol Hill park with wading pool, art museum, conservatory, and water tower."
+        link: https://volunteerparktrust.org/
+      - title: Cal Anderson Park (fountain jets)
+        description: "Capitol Hill park with playfield, tennis courts, and interactive fountain."
+        link: https://www.seattle.gov/parks/
+      - title: Interlaken Park
+        description: "Forested park with walking trails between Capitol Hill and Montlake."
+        link: https://www.seattle.gov/parks/
+      - title: Seward Park & Food Forest
+        description: "Peninsula park with old-growth forest, beaches, and a 2.4-mile loop trail."
+        link: https://www.sewardpark.org/
+      - title: Japanese Garden
+        pick: true
+        description: "Formal Japanese garden with koi pond, tea house, and seasonal events."
+        link: https://www.seattlejapanesegarden.org/
+      - title: Kubota Garden
+        description: "Japanese garden combining Northwest and Japanese plants with streams and ponds."
+        link: https://www.kubotagarden.org/
+      - title: Green Lake Loop
+        description: "Popular 2.8-mile path around Green Lake with playgrounds and water access."
+        link: https://www.seattle.gov/parks/
+  museums:
+    label: "Museums & Indoor Play"
+    icon: "fa-building"
+    entries:
+      - title: Woodland Park Zoo
+        description: "92-acre zoo with over 1,000 animals and award-winning exhibits."
+        link: https://www.zoo.org/
+      - title: Seattle Aquarium
+        pick: true
+        description: "Waterfront aquarium featuring local marine life and hands-on exhibits."
+        link: https://www.seattleaquarium.org/
+      - title: Pacific Science Center
+        pick: true
+        description: "Interactive science museum with exhibits, planetarium, and butterfly house."
+        link: https://www.pacsci.org/
+      - title: Museum of Flight
+        description: "Aerospace museum with over 175 aircraft and spacecraft on display."
+        link: https://www.museumofflight.org/
+      - title: Seattle Children's Museum
+        description: "Kid-focused museum with hands-on exhibits for ages 1-10."
+        link: https://www.thechildrensmuseum.org/
+      - title: MoPOP
+        description: "Museum of Pop Culture with exhibits on music, science fiction, and pop culture."
+        link: https://www.mopop.org/
+      - title: MOHAI
+        description: "Museum of History & Industry showcasing Seattle's history and innovations."
+        link: https://mohai.org/
+      - title: KiDiMu (Bainbridge)
+        description: "Kids Discovery Museum on Bainbridge Island with hands-on exhibits."
+        link: https://kidimu.org/
+      - title: KidsQuest (Bellevue)
+        description: "Children's museum in Bellevue with interactive play spaces."
+        link: https://www.kidsquestmuseum.org/
+      - title: Seattle Pinball Museum
+        description: "Interactive museum with playable vintage and modern pinball machines."
+        link: https://seattlepinballmuseum.com/
+      - title: Klondike Gold Rush NHP
+        description: "National Historical Park about Seattle's role in the Klondike Gold Rush."
+        link: https://www.nps.gov/klse/
+      - title: Museum of Optical Illusions
+        pick: true
+        description: "Interactive exhibits and illusions that trick the eye and mind."
+        link: https://museumofillusions.com/seattle/
+  capitol-hill:
+    label: "Capitol Hill HQ Ideas"
+    icon: "fa-home"
+    entries:
+      - title: Volunteer Park Amphitheater Summer Series (Thu 7/10 opener)
+        pick: true
+        description: "Free outdoor concert series at the Volunteer Park amphitheater."
+        link: https://volunteerparktrust.org/events/
+      - title: Capitol Hill Art Walk (Thu 7/10)
+        description: "Monthly art walk featuring local galleries and businesses."
+        link: https://capitolhillartwalk.com/
+      - title: Elliott Bay Book Co.
+        pick: true
+        description: "Iconic independent bookstore with extensive collection and events."
+        link: https://elliottbaybook.com/
+      - title: Ada's Technical Books
+        description: "Bookstore specializing in science, technology, and computing, with a café."
+        link: https://www.seattletechnicalbooks.com/
+      - title: Farmers Market (Sun 7/13)
+        description: "Weekly farmers market with local produce, food, and crafts."
+        link: https://seattlefarmersmarkets.org/
+      - title: Treats
+        pick: true
+        description: "Local favorites include Molly Moon's ice cream, Salt & Straw ice cream, General Porpoise donuts, and Rachel's Ginger Beer."
+  breweries:
+    label: "Kid-Friendly Breweries & Wineries"
+    icon: "fa-beer"
+    entries:
+      - subcat: "Breweries"
+      - title: Optimism Brewing
+        pick: true
+        description: "Spacious, family-friendly brewery on Capitol Hill with food trucks."
+        link: https://optimismbrewing.com/
+      - title: Stoup (Capitol Hill & Ballard)
+        description: "Award-winning craft brewery with locations in Capitol Hill and Ballard."
+        link: https://www.stoupbrewing.com/
+      - title: Fremont Brewing
+        pick: true
+        description: "Popular brewery with family-friendly Urban Beer Garden."
+        link: https://www.fremontbrewing.com/
+      - title: Reuben's Brews
+        description: "Family-owned craft brewery in Ballard with award-winning beers."
+        link: https://reubensbrews.com/
+      - title: Burke-Gilman Brewing
+        description: "Brewery with taprooms in Ballard and Georgetown, named after the trail."
+        link: https://burkegilmanbrewing.com/
+      - title: Other local favorites
+        description: "Lowercase, Flying Lion, Rooftop, Hellbent (Wenatchee tap)."
+      - subcat: "Woodinville Wineries"
+      - title: Chateau Ste Michelle
+        pick: true
+        description: "Washington's founding winery with beautiful grounds and summer concerts."
+        link: https://www.ste-michelle.com/
+      - title: Matthews Winery
+        description: "Farm-to-table winery with picnic grounds and tasting room."
+        link: https://matthewswinery.com/visit
+      - title: Métier Brewing (Woodinville taproom)
+        description: "Award-winning craft brewery focused on community and diversity."
+        link: https://www.metierbrewing.com/
+      - title: DeLille Cellars
+        description: "Renowned winery specializing in Bordeaux-style blends with tasting room."
+        link: https://delillecellars.com/visit-us/
+      - title: Columbia Winery
+        description: "Historic winery with spacious tasting room and food options."
+        link: https://columbiawinery.com/
+  day-trips:
+    label: "Day Trips & Excursions"
+    icon: "fa-car-side"
+    entries:
+      - title: Mount Rainier NP + Crystal Mountain Gondola
+        pick: true
+        description: "National park with hiking, waterfalls, and scenic gondola ride with mountain views."
+        link: https://www.nps.gov/mora/
+      - title: Snoqualmie Falls & Day Out With Thomas (7/11-13)
+        pick: true
+        description: "Spectacular 268-foot waterfall plus special Thomas the Tank Engine train event."
+        link: https://www.trainmuseum.org/
+      - title: Remlinger Farm
+        description: "Family farm with attractions, petting zoo, and berry picking."
+        link: https://remlingerfarms.com/
+      - title: LeMay America's Car Museum
+        description: "Massive collection of classic and vintage automobiles in Tacoma."
+        link: https://www.americascarmuseum.org/
+      - title: Lake Sammamish State Park
+        description: "State park with beaches, playgrounds, and trails east of Seattle."
+        link: https://parks.wa.gov/
+  events:
+    label: "Time-Specific Events (7/8-7/14)"
+    icon: "fa-calendar"
+    entries:
+      - title: Dancing 'Til Dusk (7/8 & 7/10)
+        description: "Free outdoor dance events with instruction and live music."
+        link: https://www.danceforjoy.biz/dancingtildusk/
+      - title: Volunteer Park Summer Music kickoff (Thu 7/10)
+        description: "Free concert series in the park's amphitheater."
+        link: https://volunteerparktrust.org/events/
+      - title: Ballard SeafoodFest (7/11-13)
+        pick: true
+        description: "Annual festival celebrating seafood with food, music, and activities."
+        link: https://www.seafoodfest.org/
+      - title: West Seattle Summer Fest (7/11-13)
+        description: "Street festival with music, food, and family activities."
+        link: https://wsjunction.org/summerfest/
+      - title: Seattle Storm vs Connecticut Sun (Fri 7/11)
+        description: "WNBA basketball game at Climate Pledge Arena."
+        link: https://storm.wnba.com/
+      - title: Seattle Storm vs Atlanta Dream (Mon 7/14)
+        description: "WNBA basketball game at Climate Pledge Arena."
+        link: https://storm.wnba.com/
+      - title: Wooden O Shakespeare in the Park (7/10-13)
+        description: "Free outdoor Shakespeare performances in various parks."
+        link: https://www.seattleshakespeare.org/woodeno/
+  rain-days:
+    label: "Rain-Day / High-Energy Backups"
+    icon: "fa-cloud-rain"
+    entries:
+      - title: Seattle Bouldering Project (Poplar)
+        description: "Indoor climbing gym with kids' area and beginner options."
+        link: https://seattleboulderingproject.com/
+      - title: DEFY & Altitude trampoline parks
+        pick: true
+        description: "Indoor trampoline parks with various jumping activities for kids."
+        link: https://www.defy.com/
+      - title: Snapdoodle Toys play rooms
+        description: "Toy store with play areas where kids can test toys before buying."
+        link: https://www.snapdoodletoys.com/
+      - title: Community-center Tot Gyms
+        description: "Indoor play spaces for young children at various community centers."
+        link: https://www.seattle.gov/parks/
