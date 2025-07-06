@@ -57,10 +57,10 @@ categories:
       - title: Pike Place Market
         description: "Historic farmers market with food vendors, crafts, and the famous fish throwers."
         link: https://pikeplacemarket.org/
-        pick: true
+        pick: cary
       - title: Central Library (Downtown)
         description: "Architectural marvel with a unique glass and steel structure, featuring an excellent children's section."
-        pick: true
+        pick: cary
         link: https://www.spl.org/hours-and-locations/central-library
   water:
     label: "On-the-Water Fun"
@@ -69,13 +69,13 @@ categories:
       - title: Boat Day
         description: "Take out a boat from our boat club (Freedom Boat Club) on Lake Union and Lake Washington."
         link: https://www.freedomboatclub.com/franchises/victory-marine-llc/nautical-landing-marina
-        pick: true
+        pick: todd
       - title: UW Canoe Rentals
         description: "Rent paddle boats, canoes, kayaks, and stand-up paddleboards on the Montlake Cut"
         link: https://www.washington.edu/ima/waterfront/boat-rentals/
-        pick: true
+        pick: cary
       - title: WA State Ferry (Seattle ↔ Bainbridge)
-        pick: true
+        pick: todd
         description: "Scenic ferry ride across Puget Sound to Bainbridge Island with spectacular Seattle skyline views."
         link: https://www.wsdot.wa.gov/ferries/
       - title: Center for Wooden Boats Sunday sails
@@ -86,7 +86,7 @@ categories:
     icon: "fa-umbrella-beach"
     entries:
       - title: Madison Park Beach
-        pick: true
+        pick: todd
         description: "Lifeguarded beach with a swimming area, playground, and picnic facilities."
         link: https://www.seattle.gov/parks/allparks/madison-park-beach
       - title: Alki Beach Park
@@ -99,14 +99,14 @@ categories:
         description: "Secluded beach at Seattle's largest city park with trails and a lighthouse."
         link: https://www.seattle.gov/parks/allparks/discovery-park
       - title: Olympic Sculpture Park pocket beach
-        pick: true
+        pick: cary
         description: "Small beach area at the waterfront sculpture park with art and shoreline access."
         link: https://www.seattleartmuseum.org/visit/olympic-sculpture-park
       - title: Gene Coulon Park
         description: "Lake Washington beach park with swimming, playground, and restaurants."
         link: https://rentonwa.gov/parks
       - title: International Fountain (Seattle Center)
-        pick: true
+        pick: cary
         description: "Interactive fountain with water shows choreographed to music, perfect for hot days."
         link: https://www.seattlecenter.com/fountain
   parks:
@@ -114,7 +114,9 @@ categories:
     icon: "fa-tree"
     entries:
       - title: Volunteer Park (wading pool & Asian Art Museum)
-        pick: true
+        pick:
+          - todd
+          - cary
         description: "Historic Capitol Hill park with wading pool, art museum, conservatory, and water tower."
         link: https://volunteerparktrust.org/
       - title: Cal Anderson Park (fountain jets)
@@ -123,10 +125,10 @@ categories:
       - title: Interlaken Park
         description: "Forested park with walking trails between Capitol Hill and Montlake."
         link: https://www.seattle.gov/parks/
-        pick: true
+        pick: cary
       - title: Seward Park & Food Forest
         description: "Peninsula park with old-growth forest, beaches, and a 2.4-mile loop trail."
-        pick: true
+        pick: cary
         link: https://www.sewardpark.org/
       - title: Japanese Garden
         description: "Formal Japanese garden with koi pond, tea house, and seasonal events."
@@ -145,7 +147,7 @@ categories:
         description: "92-acre zoo with over 1,000 animals and award-winning exhibits."
         link: https://www.zoo.org/
       - title: Seattle Aquarium
-        pick: true
+        pick: cary
         description: "Waterfront aquarium featuring local marine life and hands-on exhibits."
         link: https://www.seattleaquarium.org/
       - title: Pacific Science Center
@@ -166,12 +168,12 @@ categories:
       - title: KiDiMu (Bainbridge)
         description: "Kids Discovery Museum on Bainbridge Island with hands-on exhibits."
         link: https://kidimu.org/
-        pick: true
+        pick: cary
       - title: KidsQuest (Bellevue)
         description: "Children's museum in Bellevue with interactive play spaces."
         link: https://www.kidsquestmuseum.org/
       - title: Seattle Pinball Museum
-        pick: true
+        pick: cary
         description: "Interactive museum with playable vintage and modern pinball machines."
         link: https://seattlepinballmuseum.com/
       - title: Klondike Gold Rush NHP
@@ -185,14 +187,14 @@ categories:
     icon: "fa-home"
     entries:
       - title: Volunteer Park Amphitheater Summer Series (Thu 7/10 opener)
-        pick: true
+        pick: cary
         description: "Free outdoor concert series at the Volunteer Park amphitheater."
         link: https://volunteerparktrust.org/events/
       - title: Capitol Hill Art Walk (Thu 7/10)
         description: "Monthly art walk featuring local galleries and businesses."
         link: https://capitolhillartwalk.com/
       - title: Elliott Bay Book Co.
-        pick: true
+        pick: cary
         description: "Iconic independent bookstore with extensive collection and events."
         link: https://elliottbaybook.com/
       - title: Ada's Technical Books
@@ -202,7 +204,7 @@ categories:
         description: "Weekly farmers market with local produce, food, and crafts."
         link: https://seattlefarmersmarkets.org/
       - title: Treats
-        pick: true
+        pick: cary
         description: "Local favorites include Molly Moon's ice cream, Salt & Straw ice cream, General Porpoise donuts, and Rachel's Ginger Beer."
   breweries:
     label: "Kid-Friendly Breweries & Wineries"
@@ -210,14 +212,14 @@ categories:
     entries:
       - subcat: "Breweries"
       - title: Optimism Brewing
-        pick: true
+        pick: cary
         description: "Spacious, family-friendly brewery on Capitol Hill with food trucks."
         link: https://optimismbrewing.com/
       - title: Stoup (Capitol Hill & Ballard)
         description: "Award-winning craft brewery with locations in Capitol Hill and Ballard."
         link: https://www.stoupbrewing.com/
       - title: Fremont Brewing
-        pick: true
+        pick: cary
         description: "Popular brewery with family-friendly Urban Beer Garden."
         link: https://www.fremontbrewing.com/
       - title: Reuben's Brews
@@ -230,7 +232,7 @@ categories:
         description: "Lowercase, Flying Lion, Rooftop, Hellbent (Wenatchee tap)."
       - subcat: "Woodinville Wineries"
       - title: Chateau Ste Michelle
-        pick: true
+        pick: cary
         description: "Washington's founding winery with beautiful grounds and summer concerts."
         link: https://www.ste-michelle.com/
       - title: Matthews Winery
@@ -250,11 +252,11 @@ categories:
     icon: "fa-car-side"
     entries:
       - title: Mount Rainier NP + Crystal Mountain Gondola
-        pick: true
+        pick: cary
         description: "National park with hiking, waterfalls, and scenic gondola ride with mountain views."
         link: https://www.nps.gov/mora/
       - title: Snoqualmie Falls & Day Out With Thomas (7/11-13)
-        pick: true
+        pick: cary
         description: "Spectacular 268-foot waterfall plus special Thomas the Tank Engine train event."
         link: https://www.trainmuseum.org/
       - title: Remlinger Farm
@@ -277,7 +279,7 @@ categories:
         description: "Free concert series in the park's amphitheater."
         link: https://volunteerparktrust.org/events/
       - title: Ballard SeafoodFest (7/11-13)
-        pick: true
+        pick: cary
         description: "Annual festival celebrating seafood with food, music, and activities."
         link: https://www.seafoodfest.org/
       - title: West Seattle Summer Fest (7/11-13)

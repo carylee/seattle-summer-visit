@@ -58,7 +58,15 @@
               {% if entry.subcat %}
                 <h3 class="sub-category">{{ entry.subcat|safe }}</h3>
               {% else %}
-                <div class="activity{% if entry.pick %} cary-pick{% endif %}">
+                {% if entry.pick %}
+                  {% if entry.pick is string %}
+                    {% set pick_names = [entry.pick] %}
+                  {% else %}
+                    {% set pick_names = entry.pick %}
+                  {% endif %}
+                  {% set pick_label = pick_names | map('capitalize') | join(' & ') %}
+                {% endif %}
+                <div class="activity{% if entry.pick %} pick{% endif %}"{% if entry.pick %} data-pick-label="{{ pick_label }}{% if pick_names|length > 1 %}'s Picks{% else %}'s Pick{% endif %}"{% endif %}>
                   <div class="activity-header">
                     <span class="activity-title">{{ entry.title }}</span>
                   </div>

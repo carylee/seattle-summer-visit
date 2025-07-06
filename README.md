@@ -10,7 +10,7 @@ This website serves as a collection of Seattle activities organized by category,
 
 - Mobile-first responsive design
 - Accordion-style sections for easy browsing
-- Highlighted recommendations (Cary's Picks)
+- Highlighted recommendations (family picks)
 - External links to all attractions
 - Smooth scrolling navigation
 

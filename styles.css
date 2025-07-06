@@ -280,15 +280,15 @@ main {
   margin-left: 0.25rem;
 }
 
-/* Cary's pick highlight */
-.cary-pick {
+/* Favorite pick highlight */
+.pick {
   background-color: var(--highlight);
   border-left: 4px solid var(--accent);
   position: relative;
 }
 
-.cary-pick::before {
-  content: "Cary's Pick";
+.pick::before {
+  content: attr(data-pick-label);
   position: absolute;
   top: 0;
   right: 0;
