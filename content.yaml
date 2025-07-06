@@ -65,19 +65,14 @@ categories:
     label: "On-the-Water Fun"
     icon: "fa-water"
     entries:
-      - subcat: "Freedom Boat Club routes (member access):"
-      - title: "Lake Union → Lake Washington loop"
+      - title: Boat Day
+        description: "Take out a boat from our boat club (Freedom Boat Club) on Lake Union and Lake Washington."
+        link: https://www.freedomboatclub.com/franchises/victory-marine-llc/nautical-landing-marina
         pick: true
-      - title: "Ballard Locks → Puget Sound/Shilshole"
-      - title: "Elliott Bay skyline cruise"
-      - title: "Island hop: Blake Island SP or Poulsbo"
-      - subcat: "Other options"
-      - title: Electric Boat Co.
-        description: "Rent an electric boat to cruise around Lake Union at your own pace."
-        link: https://www.theelectricboatco.com/
-      - title: Green Lake Boat House
-        description: "Rent paddle boats, canoes, kayaks, and stand-up paddleboards on Green Lake."
-        link: https://greenlakeboathouse.com/
+      - title: UW Canoe Rentals
+        description: "Rent paddle boats, canoes, kayaks, and stand-up paddleboards on the Montlake Cut"
+        link: https://www.washington.edu/ima/waterfront/boat-rentals/
+        pick: true
       - title: WA State Ferry (Seattle ↔ Bainbridge)
         pick: true
         description: "Scenic ferry ride across Puget Sound to Bainbridge Island with spectacular Seattle skyline views."
@@ -103,6 +98,7 @@ categories:
         description: "Secluded beach at Seattle's largest city park with trails and a lighthouse."
         link: https://www.seattle.gov/parks/allparks/discovery-park
       - title: Olympic Sculpture Park pocket beach
+        pick: true
         description: "Small beach area at the waterfront sculpture park with art and shoreline access."
         link: https://www.seattleartmuseum.org/visit/olympic-sculpture-park
       - title: Gene Coulon Park
@@ -126,11 +122,12 @@ categories:
       - title: Interlaken Park
         description: "Forested park with walking trails between Capitol Hill and Montlake."
         link: https://www.seattle.gov/parks/
+        pick: true
       - title: Seward Park & Food Forest
         description: "Peninsula park with old-growth forest, beaches, and a 2.4-mile loop trail."
+        pick: true
         link: https://www.sewardpark.org/
       - title: Japanese Garden
-        pick: true
         description: "Formal Japanese garden with koi pond, tea house, and seasonal events."
         link: https://www.seattlejapanesegarden.org/
       - title: Kubota Garden
@@ -151,7 +148,6 @@ categories:
         description: "Waterfront aquarium featuring local marine life and hands-on exhibits."
         link: https://www.seattleaquarium.org/
       - title: Pacific Science Center
-        pick: true
         description: "Interactive science museum with exhibits, planetarium, and butterfly house."
         link: https://www.pacsci.org/
       - title: Museum of Flight
@@ -169,17 +165,18 @@ categories:
       - title: KiDiMu (Bainbridge)
         description: "Kids Discovery Museum on Bainbridge Island with hands-on exhibits."
         link: https://kidimu.org/
+        pick: true
       - title: KidsQuest (Bellevue)
         description: "Children's museum in Bellevue with interactive play spaces."
         link: https://www.kidsquestmuseum.org/
       - title: Seattle Pinball Museum
+        pick: true
         description: "Interactive museum with playable vintage and modern pinball machines."
         link: https://seattlepinballmuseum.com/
       - title: Klondike Gold Rush NHP
         description: "National Historical Park about Seattle's role in the Klondike Gold Rush."
         link: https://www.nps.gov/klse/
       - title: Museum of Optical Illusions
-        pick: true
         description: "Interactive exhibits and illusions that trick the eye and mind."
         link: https://museumofillusions.com/seattle/
   capitol-hill:
@@ -302,7 +299,6 @@ categories:
         description: "Indoor climbing gym with kids' area and beginner options."
         link: https://seattleboulderingproject.com/
       - title: DEFY & Altitude trampoline parks
-        pick: true
         description: "Indoor trampoline parks with various jumping activities for kids."
         link: https://www.defy.com/
       - title: Snapdoodle Toys play rooms
