@@ -1,5 +1,7 @@
 import yaml
 import markdown
+import shutil
+import os
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 def render_with_markdown(data):
@@ -15,18 +17,31 @@ def render_with_markdown(data):
             render_with_markdown(i)
 
 def main():
+    # Ensure dist directory exists
+    os.makedirs('dist', exist_ok=True)
+    
+    # Load content and render
     with open('content.yaml', 'r') as f:
         content = yaml.safe_load(f)
     render_with_markdown(content)
+    
+    # Generate HTML
     env = Environment(
         loader=FileSystemLoader('.'),
         autoescape=select_autoescape(['html', 'htm'])
     )
     template = env.get_template('index.template.html')
     index_html = template.render(**content)
-    with open('index.html', 'w') as f:
+    
+    # Write to dist directory
+    with open('dist/index.html', 'w') as f:
         f.write(index_html)
-    print("Site built: index.html is generated.")
+    
+    # Copy static assets
+    shutil.copy2('styles.css', 'dist/styles.css')
+    shutil.copy2('script.js', 'dist/script.js')
+    
+    print("Site built successfully to dist/ directory")
 
 if __name__ == "__main__":
     main()
