@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "uv run build.py"
+  command = "make build"
 
 [build.environment]
   PYTHON_VERSION = "3.11"
